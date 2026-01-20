@@ -10,7 +10,11 @@ export const About = () => {
               <hr className="common-underline" />
             </div>
             <div className="about-pic">
-              <img src="/girl.jpg" alt="My-image" className="about-img" />
+              <img
+                src={`${import.meta.env.BASE_URL}girl.jpg`}
+                alt="My-image"
+                className="about-img"
+              />
             </div>
             <div className="about-matter">
               <p>

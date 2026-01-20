@@ -15,7 +15,11 @@ export const Projects = () => {
             {projects.map((curr) => {
               return (
                 <li key={curr.id} className="each-project">
-                  <img src={curr.img} className="project-img" alt={curr.name} />
+                  <img
+                    src={`${import.meta.env.BASE_URL}${curr.img}`}
+                    className="project-img"
+                    alt={curr.name}
+                  />
                   <h3>{curr.name}</h3>
                   <p>{curr.description}</p>
                   <div className="button-div">

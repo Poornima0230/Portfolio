@@ -1,7 +1,7 @@
 .skills {
     background-color: black;
     color: white;
-    background-image: url("BgImg.jpg");
+    background-image: url("../../public/BgImg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

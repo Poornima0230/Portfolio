@@ -18,7 +18,11 @@ export const Skills = () => {
           {techSkill.map((cur) => {
             return (
               <li className="each-tech" key={cur.id}>
-                <img src={cur.icon} alt={cur.name} className="each-img" />
+                <img
+                  src={`${import.meta.env.BASE_URL}${cur.icon}`}
+                  alt={cur.name}
+                  className="each-img"
+                />
                 <p className="each-name">{cur.name}</p>
               </li>
             );
@@ -35,7 +39,11 @@ export const Skills = () => {
           {tools.map((cur) => {
             return (
               <li className="each-tech" key={cur.id}>
-                <img src={cur.icon} alt={cur.name} className="each-img" />
+                <img
+                  src={`${import.meta.env.BASE_URL}${cur.icon}`}
+                  alt={cur.name}
+                  className="each-img"
+                />
                 <p className="each-name">{cur.name}</p>
               </li>
             );

@@ -9,7 +9,11 @@ export const Home = () => {
       <div className="home">
         <div className="home-content">
           <div className="blur">
-            <img src="girl.jpg" alt="my-image" className="my-image" />
+            <img
+              src={`${import.meta.env.BASE_URL}girl.jpg`}
+              alt="my-image"
+              className="my-image"
+            />
             <h1 className="my-name">Poornima Perisetty</h1>
             <h3 className="my-tag">A passionate Frontend-developer</h3>
           </div>
