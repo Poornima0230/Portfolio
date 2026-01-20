@@ -6,34 +6,44 @@ import { About } from "./pages/About";
 import { Skills } from "./pages/Skills";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/skills",
+          element: <Skills />,
+        },
+        {
+          path: "/projects",
+          element: <Projects />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <AppLayout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/skills",
-        element: <Skills />,
-      },
-      {
-        path: "/projects",
-        element: <Projects />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-    ],
-  },
-]);
+    basename: "/Portfolio",
+  }
+);
 export const MainApp = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <RouterProvider
+      router={router}
+      // basename="/Portfolio"
+    />
+  );
 };
