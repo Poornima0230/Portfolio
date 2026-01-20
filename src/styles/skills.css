@@ -1,0 +1,100 @@
+.skills {
+    background-color: black;
+    color: white;
+    background-image: url("BgImg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem;
+    padding-top: 6rem;
+}
+
+.each-img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.each-name {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 800;
+    text-shadow: 0 0 26px black, 0 0 26px black, 0 0 26px black, 0 0 26px black;
+
+}
+
+.each-tech {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-radius: 1.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+
+    animation: fadeUp 1.5s ease 0s 1 both;
+    -webkit-animation: fadeUp 1.5s ease 0s 1 both;
+    animation-timeline: view();
+    animation-range-end: 50%;
+}
+
+.each-tech:hover {
+    animation: fadeUp 1.5s ease 0s 1 both;
+    transform: translateY(-10px);
+    /*transform: scale(2);
+    */
+    /*-webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+     */
+    -webkit-animation: fadeUp 1.5s ease 0s 1 both;
+}
+
+
+.tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+
+    width: 80%;
+}
+
+.technical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 4rem;
+}
+
+
+
+.tech-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    animation: zoom 1.5s ease;
+    -webkit-animation: zoom 1.5s ease;
+    animation-timeline: view();
+    animation-range-end: 50%;
+}
+
+.tech-head h3 {
+    transform: rotate(-90deg);
+    font-size: 5rem;
+    white-space: nowrap;
+    color: var(--primary);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.65), 0 0 6px rgba(255, 255, 255, 0.75);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+
+}

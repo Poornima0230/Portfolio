@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "icon": "/react.png",
+        "name": "React"
+    },
+    {
+        "id": 2,
+        "icon": "/js.png",
+        "name": "JavaScript"
+    },
+    {
+        "id": 3,
+        "icon": "/css.png",
+        "name": "Css"
+    },
+    {
+        "id": 4,
+        "icon": "/html.webp",
+        "name": "Html"
+    },
+    {
+        "id": 5,
+        "icon": "/c.png",
+        "name": "C-lang"
+    },
+    {
+        "id": 6,
+        "icon": "/python.png",
+        "name": "Python"
+    }
+]

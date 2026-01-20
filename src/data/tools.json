@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "icon": "/figma.png",
+        "name": "Figma"
+    },
+    {
+        "id": 2,
+        "icon": "/github.png",
+        "name": "Github"
+    },
+    {
+        "id": 3,
+        "icon": "/netlify.png",
+        "name": "Netlify"
+    },
+    {
+        "id": 4,
+        "icon": "/vscode.png",
+        "name": "Vs code"
+    }
+]

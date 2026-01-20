@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #000;
+  --text-color: #fff;
+  --secondary: #f62c09;
+  --shadow: #847f79;
+  --shadow2: #c7c7c7;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Marcellus SC", serif;
+}
+
+p,
+li,
+a,
+button {
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 132rem;
+  margin: auto;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  animation: open-content 1s ease-in forwards;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+}
+
+@keyframes open-content {
+  to {
+    transform: translate(-50%, 0) scaleX(1);
+    -webkit-transform: translate(-50%, 0) scaleX(1);
+    -moz-transform: translate(-50%, 0) scaleX(1);
+    -ms-transform: translate(-50%, 0) scaleX(1);
+    -o-transform: translate(-50%, 0) scaleX(1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f84c2e;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f62c09;
+}

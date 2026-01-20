@@ -1,0 +1,78 @@
+.about-img {
+    mask:
+        url(https://assets.codepen.io/1101822/circles-mask-whole.svg) no-repeat center;
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 40rem;
+    height: 40rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    animation: imageReveal 1.5s ease 0s 1 both;
+    -webkit-animation: imageReveal 1.5s ease 0s 1 both;
+    animation-timeline: view();
+    animation-range-end: 50%;
+}
+
+.about-img:hover {
+    scale: 1.2;
+}
+
+.about {
+    background-color: black;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.about-matter {
+    font-size: 2.8rem;
+    width: 50%;
+    animation: fadeUp 1.5s ease 0s 1 both;
+    -webkit-animation: fadeUp 1.5s ease 0s 1 both;
+    animation-timeline: view();
+    animation-range-end: 50%;
+
+}
+
+.style {
+    font-family: "dancing script", serif;
+}
+
+.about-blur {
+    box-shadow: 0 0 6rem 5rem rgba(255, 255, 255, 0.63);
+}
+
+@media screen and (max-width:990px) {
+    html {
+        font-size: 50%;
+    }
+
+    .about-matter {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .about-img {
+        width: 70%;
+        height: 70%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .about-content {
+        padding-top: 6rem;
+    }
+}

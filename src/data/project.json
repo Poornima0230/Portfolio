@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "img": "worldAtlas.png",
+        "name": "worldAtlas",
+        "description": "An interactive World countries explorer made with React,displaying detailed country information on click using the REST Countries API.",
+        "github": "https://poornima0230.github.io/World-facts/",
+        "live": "https://worldatlas-react.netlify.app"
+    },
+    {
+        "id": 2,
+        "img": "fakeStore.png",
+        "name": "fakeStore",
+        "description": "A fully functional e-commerce storefront built using React that fetches and displays products from a fake store API with cart functionality.",
+        "github": "https://poornima0230.github.io/fakeStore/",
+        "live": "https://fakestorep.netlify.app"
+    },
+    {
+        "id": 3,
+        "img": "Photofolio.png",
+        "name": "PhotoFolio",
+        "description": "A Responsive Photography portfolio Website built with HTML,CSS, and vanilla JavaScript featuring smooth scrolling and a professional gallery layout.",
+        "github": "https://poornima0230.github.io/Photofolio/",
+        "live": "https://photofoliop.netlify.app/"
+    }
+]
